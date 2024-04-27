@@ -1,0 +1,30 @@
+@use "palette";
+
+.about-container {
+  height: 50dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+
+  h2 {
+    color: palette.$primary;
+  }
+
+  img {
+    height: 40dvh;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+  }
+
+  p {
+    max-width: 30dvw;
+  }
+}

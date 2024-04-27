@@ -1,0 +1,109 @@
+@use '@angular/material'as mat;
+@use "typography"as typ;
+@use "../partials/palette";
+@use "../partials/variables"as var;
+@use "sass:map";
+@include mat.core();
+
+$primary: (50 : palette.$primary-50,
+  100 : palette.$primary-100,
+  200 : palette.$primary-200,
+  300 : palette.$primary-300,
+  400 : palette.$primary-400,
+  500 : palette.$primary-500,
+  600 : palette.$primary-600,
+  700 : palette.$primary,
+  800 : palette.$primary-800,
+  900 : palette.$primary-900,
+  A100 : palette.$primary-A100,
+  A200 : palette.$primary-A200,
+  A400 : palette.$primary-A400,
+  A700 : palette.$primary-A700,
+  contrast: (50 : var.$font-color,
+    100 : var.$font-color,
+    200 : var.$font-color,
+    300 : var.$font-color,
+    400 : var.$font-color,
+    500 : var.$font-color,
+    600 : var.$font-color,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : var.$font-color,
+    A200 : var.$font-color,
+    A400 : var.$font-color,
+    A700 : #ffffff,
+  ));
+
+$accent: (50 : palette.$accent-50,
+  100 : palette.$accent-100,
+  200 : palette.$accent-200,
+  300 : palette.$accent-300,
+  400 : palette.$accent-400,
+  500 : palette.$accent,
+  600 : palette.$accent-600,
+  700 : palette.$accent-700,
+  800 : palette.$accent-800,
+  900 : palette.$accent-900,
+  A100 : palette.$accent-A100,
+  A200 : palette.$accent-A200,
+  A400 : palette.$accent-A400,
+  A700 : palette.$accent-A700,
+  contrast: (50 : var.$font-color,
+    100 : var.$font-color,
+    200 : var.$font-color,
+    300 : var.$font-color,
+    400 : var.$font-color,
+    500 : var.$font-color,
+    600 : var.$font-color,
+    700 : var.$font-color,
+    800 : var.$font-color,
+    900 : #ffffff,
+    A100 : var.$font-color,
+    A200 : var.$font-color,
+    A400 : var.$font-color,
+    A700 : var.$font-color,
+  ));
+
+$warn: (50 : #fee8e7,
+  100 : #fcc7c3,
+  200 : #faa19b,
+  300 : #f77b72,
+  400 : #f65f54,
+  500 : #f44336,
+  600 : #f33d30,
+  700 : #f13429,
+  800 : #ef2c22,
+  900 : #ec1e16,
+  A100 : #ffffff,
+  A200 : #ffe9e9,
+  A400 : #ffb8b6,
+  A700 : #ff9f9c,
+  contrast: (50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  ));
+
+$my-app-primary: mat.define-palette($primary, 700);
+$my-app-accent: mat.define-palette($accent);
+$my-app-warn: mat.define-palette($warn);
+$my-app-theme: mat.define-light-theme((color: (primary: $my-app-primary,
+  accent: $my-app-accent, warn: $my-app-warn), typography: typ.$my-typography));
+
+$material-theme-overrides: ('color': ('foreground': ('text': var.$font-color),
+),
+);
+$theme: map.deep-merge($my-app-theme, $material-theme-overrides);
+
+@include mat.all-component-themes($theme);

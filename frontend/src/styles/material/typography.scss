@@ -1,0 +1,14 @@
+@use '@angular/material' as mat;
+@use "../partials/variables" as var;
+
+$body-level1: mat.define-typography-level($font-family: var.$font-family, $font-size: 14px, $line-height: 24px);
+$body-level2: mat.define-typography-level($font-family: var.$font-family, $font-size: 16px, $line-height: 24px);
+$button-level: mat.define-typography-level($font-family: var.$font-family, $font-size: 14px, $line-height: 24px, $font-weight: 500, $letter-spacing: 1.25px);
+$caption-level: mat.define-typography-level($font-family: var.$font-family, $font-size: 12px, $line-height: 20px, $font-weight: 400, $letter-spacing: 0.5px);
+
+$my-typography: mat.define-typography-config($body-1: $body-level1,
+$body-2: $body-level2,
+$subtitle-2: $body-level2,
+$caption: $caption-level,
+$button: $button-level,
+$headline-6: mat.define-typography-level($font-family: var.$font-family, $font-size: 20px, $line-height: 28px, $font-weight: 500, $letter-spacing: 0.15px));

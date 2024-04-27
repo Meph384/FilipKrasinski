@@ -1,0 +1,17 @@
+@use "palette";
+
+$font-family: "Poppins";
+$font-color: #2D3A4A;
+$font-disabled-color: #6C757D;
+$error: #D22532;
+$warning: #FFD600;
+$success: #0AA663;
+$mat-error: #f44336;
+
+$header-height: 75px;
+$background-hover: rgba(palette.$primary, 8%);
+$tertiary-blue-gray-50: #F3F7F9;
+
+$visited-link-color: #72687D;
+
+$scrollbar-width: 8px;
