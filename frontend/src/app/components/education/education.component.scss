@@ -1,0 +1,73 @@
+@use "palette";
+
+.education-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: palette.$tertiary-900;
+
+  h2 {
+    padding-bottom: 10px;
+  }
+
+  .panel {
+    width: 100%;
+    max-width: 1000px;
+    background: palette.$tertiary-400;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    .panel-title {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      background: palette.$tertiary-900;
+      color: palette.$primary;
+      cursor: pointer;
+
+      mat-icon.chevron {
+        transition: transform 0.3s ease;
+        margin-right: 10px;
+      }
+
+      &:hover {
+        background: palette.$tertiary-800;
+      }
+    }
+
+    .panel-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      padding: 20px;
+      background: palette.$tertiary-900;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out, padding 0.3s ease-out, opacity 0.3s ease-out;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 300px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    p {
+      color: palette.$tertiary-50;
+      margin: 0;
+      padding: 0 20px 20px;
+    }
+
+    .rotated {
+      transform: rotate(180deg);
+    }
+  }
+}

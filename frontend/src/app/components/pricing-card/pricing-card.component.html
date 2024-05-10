@@ -1,0 +1,22 @@
+<div id="pricing" class="pricing-container">
+  <h2>Oferta</h2>
+  @if(cards.length > 0) {
+    <div id="pricing-card" class="card-container">
+      @for(card of cards; track card.title) {
+        <div class="card" [style.background-image]="card.backgroundImage">
+          <div class="overlay">
+            <div class="content">
+              <h3>{{ card.title }}</h3>
+              <p>{{ card.shortDescription }}</p>
+            </div>
+            <div class="detailed-content">
+              <h3>{{ card.title }}</h3>
+              <p>{{ card.longDescription }}</p>
+              <b>{{ card.price }}</b>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  }
+</div>

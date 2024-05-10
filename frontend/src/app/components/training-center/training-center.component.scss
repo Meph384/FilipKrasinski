@@ -1,0 +1,12 @@
+@use "palette";
+
+.training-center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px;
+
+  background-color: palette.$tertiary-900;
+}

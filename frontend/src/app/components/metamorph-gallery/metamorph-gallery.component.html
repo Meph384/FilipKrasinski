@@ -1,0 +1,18 @@
+<div id="metamorphosis" class="gallery-container">
+  <h2>Metamorfozy</h2>
+  <div class="gallery">
+    @for(transformation of transformations; track transformations) {
+      <div class="transformation">
+        <div class="image-container before">
+          <img [src]="transformation.beforeImage" alt="Before">
+        </div>
+        <div class="image-container after">
+          <img [src]="transformation.afterImage" alt="After">
+        </div>
+        <div class="description">
+          <p>{{ transformation.description }}</p>
+        </div>
+      </div>
+    }
+  </div>
+</div>

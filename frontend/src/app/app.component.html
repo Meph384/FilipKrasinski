@@ -1,9 +1,14 @@
 <mat-sidenav-container class="example-container">
   <mat-sidenav #sidenav mode="over" position="end" fixedInViewport="true" (keydown.escape)="sidenav.close()">
     <mat-nav-list>
-      <!-- TODO: Scroll on click -->
-      <a mat-list-item href="#hero-container">Home</a>
-      <a mat-list-item href="#about-container">About</a>
+      <a mat-list-item href="#" (click)="navigateToSection('hero', sidenav)">Home</a>
+      <a mat-list-item href="#" (click)="navigateToSection('about', sidenav)">About</a>
+      <a mat-list-item href="#" (click)="navigateToSection('education', sidenav)">Education</a>
+      <a mat-list-item href="#" (click)="navigateToSection('pricing', sidenav)">Offer</a>
+      <a mat-list-item href="#" (click)="navigateToSection('gallery', sidenav)">Metamorphosis</a>
+      <a mat-list-item href="#" (click)="navigateToSection('training-center', sidenav)">Training Center</a>
+      <a mat-list-item href="#" (click)="navigateToSection('partner', sidenav)">Partners</a>
+
     </mat-nav-list>
   </mat-sidenav>
 
@@ -13,6 +18,10 @@
     </button>
     <app-hero></app-hero>
     <app-about></app-about>
+    <app-education></app-education>
+    <app-pricing-card></app-pricing-card>
+    <app-metamorph-gallery></app-metamorph-gallery>
+    <app-training-center></app-training-center>
+    <app-partners></app-partners>
   </mat-sidenav-content>
-
 </mat-sidenav-container>

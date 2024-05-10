@@ -1,7 +1,9 @@
 @use "palette";
+@use "breakpoints";
 
 .about-container {
-  height: 50dvh;
+  height: auto;
+  margin: 40px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,8 +15,9 @@
   align-items: center;
   gap: 64px;
 
-  h2 {
-    color: palette.$primary;
+  @media (max-width: breakpoints.$medium-screen) {
+    flex-direction: column-reverse;
+    width: 100%;
   }
 
   img {
@@ -26,5 +29,9 @@
 
   p {
     max-width: 30dvw;
+
+    @media (max-width: breakpoints.$medium-screen) {
+      max-width: 75dvw;
+    }
   }
 }
