@@ -11,11 +11,14 @@ import {EducationComponent} from "./components/education/education.component";
 import {MetamorphGalleryComponent} from "./components/metamorph-gallery/metamorph-gallery.component";
 import {PartnersComponent} from "./components/partners/partners.component";
 import {TrainingCenterComponent} from "./components/training-center/training-center.component";
+import {
+  TrainingCenterLocationComponent
+} from "./components/training-center-location/training-center-location.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeroComponent, MatIcon, MatIconButton, MatSidenav, MatSidenavContainer, MatSidenavContent, MatListItem, MatNavList, AboutComponent, PricingCardComponent, EducationComponent, MetamorphGalleryComponent, PartnersComponent, TrainingCenterComponent],
+  imports: [RouterOutlet, HeroComponent, MatIcon, MatIconButton, MatSidenav, MatSidenavContainer, MatSidenavContent, MatListItem, MatNavList, AboutComponent, PricingCardComponent, EducationComponent, MetamorphGalleryComponent, PartnersComponent, TrainingCenterComponent, TrainingCenterLocationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

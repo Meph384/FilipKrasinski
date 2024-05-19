@@ -35,8 +35,8 @@ export class PartnersComponent {
   };
 
   logos = [
-    { src: 'https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg', alt: 'Partner 1' },
-    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png', alt: 'Partner 2' },
-    { src: 'https://www.ventrilo.com/images/WebBanner.png', alt: 'Partner 5' }
+    { src: './assets/images/partners/ntfy.jpg', alt: 'Nice To Fit You' },
+    { src: './assets/images/partners/hsc.png', alt: 'Holistic Sport Center' },
+    { src: './assets/images/partners/Fizjoterapia Łukasz Szefner.jpg', alt: 'Fizjoterapia Łukasz Szefner' }
   ];
 }

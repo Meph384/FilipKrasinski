@@ -34,9 +34,9 @@ export class TrainingCenterComponent {
   };
 
   logos = [
-    { src: 'https://treningpersonalny.eu/wp-content/uploads/2020/03/ctp_11.jpg', alt: 'Partner 1' },
-    { src: 'https://treningpersonalny.eu/wp-content/uploads/2020/03/ctp_12.jpg', alt: 'Partner 2' },
-    { src: 'https://treningpersonalny.eu/wp-content/uploads/2020/03/ctp_10.jpg', alt: 'Partner 3' },
-    { src: 'https://treningpersonalny.eu/wp-content/uploads/2020/03/ctp_7-scaled.jpg', alt: 'Partner 4' },
+    { src: './assets/images/gym/Siłownia1.jpg', alt: 'Siłownia' },
+    { src: './assets/images/gym/Siłownia2.jpg', alt: 'Siłownia' },
+    { src: './assets/images/gym/Siłownia3.jpg', alt: 'Siłownia' },
+    { src: './assets/images/gym/Siłownia4.jpg', alt: 'Siłownia' },
   ];
 }
