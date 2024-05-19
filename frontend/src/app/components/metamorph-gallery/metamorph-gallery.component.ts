@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Transformation} from "../../interfaces/transformation.interface";
 
 @Component({
   selector: 'app-metamorph-gallery',
@@ -8,41 +9,20 @@ import { Component } from '@angular/core';
   styleUrl: './metamorph-gallery.component.scss'
 })
 export class MetamorphGalleryComponent {
-  transformations = [
+  transformations: Transformation[] = [
     {
-      beforeImage: './assets/images/Filip.png',
-      afterImage: './assets/images/Filip.png',
-      description: "John Doe's journey results in significant muscle gain."
+      beforeImage1: './assets/images/Metamorph/Mateusz_Zygmunt_Before_Front.jpg',
+      afterImage1: './assets/images/Metamorph/Mateusz_Zygmunt_After_Front.jpg',
+      beforeImage2: './assets/images/Metamorph/Mateusz_Zygmunt_Before_Side.jpg',
+      afterImage2: './assets/images/Metamorph/Mateusz_Zygmunt_After_Side.jpg',
+      description: 'Description of transformation 1'
     },
     {
-      beforeImage: './assets/images/Filip.png',
-      afterImage: './assets/images/Filip.png',
-      description: 'Jane Smith after a 3-month dedicated fitness regimen.'
-    },
-    {
-      beforeImage: './assets/images/Filip.png',
-      afterImage: './assets/images/Filip.png',
-      description: 'Jane Smith after a 3-month dedicated fitness regimen.'
-    },
-    {
-      beforeImage: './assets/images/Filip.png',
-      afterImage: './assets/images/Filip.png',
-      description: 'Jane Smith after a 3-month dedicated fitness regimen.'
-    },
-    {
-      beforeImage: './assets/images/Filip.png',
-      afterImage: './assets/images/Filip.png',
-      description: 'Jane Smith after a 3-month dedicated fitness regimen.'
-    },
-    {
-      beforeImage: './assets/images/Filip.png',
-      afterImage: './assets/images/Filip.png',
-      description: 'Jane Smith after a 3-month dedicated fitness regimen.'
-    },
-    {
-      beforeImage: './assets/images/Filip.png',
-      afterImage: './assets/images/Filip.png',
-      description: 'Jane Smith after a 3-month dedicated fitness regimen.'
+      beforeImage1: './assets/images/Metamorph/Mariusz_Gilewicz_Before_Front.jpg',
+      afterImage1: './assets/images/Metamorph/Mariusz_Gilewicz_After_Front.jpg',
+      beforeImage2: './assets/images/Metamorph/Mariusz_Gilewicz_Before_Side.jpg',
+      afterImage2: './assets/images/Metamorph/Mariusz_Gilewicz_After_Side.jpg',
+      description: 'Description of transformation 2'
     },
   ];
 }

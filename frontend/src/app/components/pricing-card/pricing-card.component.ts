@@ -32,7 +32,7 @@ export class PricingCardComponent {
     },
     {
       backgroundImage: 'url("https://media.istockphoto.com/id/1365886686/photo/shot-of-a-woman-working-out-with-a-kettle-bell.jpg?s=612x612&w=0&k=20&c=dP49_35EQgBeERghq_xnYEAvDLBXn2Vt0Xhx9rdWLl0=")',
-      title: 'Prowadzenie online #Team Krasinski',
+      title: 'Prowadzenie online',
       shortDescription: 'Ideal for couples.',
       longDescription: 'This plan includes 5 sessions per month, nutrition guidance, and 24/7 gym access.',
       price: '300zł/msc'
