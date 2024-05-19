@@ -34,9 +34,9 @@ export class TrainingCenterComponent {
   };
 
   logos = [
-    { src: './assets/images/gym/Siłownia1.jpg', alt: 'Siłownia' },
-    { src: './assets/images/gym/Siłownia2.jpg', alt: 'Siłownia' },
-    { src: './assets/images/gym/Siłownia3.jpg', alt: 'Siłownia' },
-    { src: './assets/images/gym/Siłownia4.jpg', alt: 'Siłownia' },
+    { src: './assets/images/gym/silownia1.jpg', alt: 'Siłownia' },
+    { src: './assets/images/gym/silownia2.jpg', alt: 'Siłownia' },
+    { src: './assets/images/gym/silownia3.jpg', alt: 'Siłownia' },
+    { src: './assets/images/gym/silownia4.jpg', alt: 'Siłownia' },
   ];
 }

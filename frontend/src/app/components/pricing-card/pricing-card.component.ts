@@ -10,21 +10,21 @@ import {PricingCard} from '../../interfaces/pricing-card.interface';
 export class PricingCardComponent {
   cards: PricingCard[] = [
     {
-      backgroundImage: 'url("https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?cs=srgb&dl=pexels-victorfreitas-841130.jpg&fm=jpg")',
+      backgroundImage: 'url("./assets/images/offer/Trening personalny.jpg")',
       title: 'Treningi personalne',
       shortDescription: 'Ideal for beginners and advanced.',
       longDescription: 'This plan includes 5 sessions per month, nutrition guidance, and 24/7 gym access.',
       price: 'Umów się na bezpłatną konsultację'
     },
     {
-      backgroundImage: 'url("https://cdn.create.vista.com/api/media/small/239945694/stock-photo-athletic-young-couple-doing-abs-exercise-yoga-mats-gym")',
+      backgroundImage: 'url("./assets/images/offer/Trening w parach.jpg")',
       title: 'Treningi w parach',
       shortDescription: 'Ideal for couples.',
       longDescription: 'This plan includes 5 sessions per month, nutrition guidance, and 24/7 gym access.',
       price: 'Umów się na bezpłatną konsultację'
     },
     {
-      backgroundImage: 'url("https://st2.depositphotos.com/1637787/8805/i/450/depositphotos_88059202-stock-photo-man-flipping-a-tire-at.jpg")',
+      backgroundImage: 'url("./assets/images/offer/Indywidualny plan treningowy.jpg")',
       title: 'Indywidualny Plan Treningowy',
       shortDescription: 'Ideal for couples.',
       longDescription: 'This plan includes 7 sessions per month, nutrition guidance, and 24/7 gym access.',
