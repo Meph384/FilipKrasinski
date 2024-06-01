@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ContactService {
-  private apiUrl = 'https://filipkrasinski.pl/contact.php'; // Change this URL to your PHP script URL
+  private apiUrl = 'https://filipkrasinski.pl/contact.php';
 
   constructor(private http: HttpClient) { }
 
