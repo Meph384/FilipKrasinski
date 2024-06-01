@@ -4,6 +4,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import {ContactService} from "../../Services/ContactService";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-contact',
@@ -13,12 +14,14 @@ import {ContactService} from "../../Services/ContactService";
     MatInputModule,
     MatButtonModule,
     ReactiveFormsModule,
+    NgIf,
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
   contactForm!: FormGroup;
+  formSubmitted: boolean = false;
 
   constructor(private fb: FormBuilder, private contactService: ContactService) {}
 
@@ -29,6 +32,7 @@ export class ContactComponent {
       phoneNumber: [''],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
+      preferredTrainingHours: ['', Validators.required]
     });
   }
 
@@ -36,9 +40,10 @@ export class ContactComponent {
     if (this.contactForm.valid) {
       console.log(this.contactForm.value)
       this.contactService.submitForm(this.contactForm.value).subscribe(
-        response => {
-          console.log('Form submission successful:', response);
+        () => {
+          this.formSubmitted = true;
           this.contactForm.reset();
+          this.contactForm.clearValidators();
         },
         error => {
           console.error('Form submission failed:', error);
