@@ -1,0 +1,24 @@
+.form-container{
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  max-width: 65%;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.half-width {
+  width: 48%;
+  margin-right: 2%;
+}
+
+.half-width:last-child {
+  margin-right: 0;
+}
+
+h2{
+  margin-bottom: 20px;
+}

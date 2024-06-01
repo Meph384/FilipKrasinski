@@ -1,0 +1,33 @@
+<div class="form-container">
+  <h2>Zacznij zmianę! Skontaktuj się ze mną:</h2>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div class="full-width">
+      <mat-form-field class="half-width">
+        <mat-label>Imię</mat-label>
+        <input matInput formControlName="name" required>
+      </mat-form-field>
+      <mat-form-field class="half-width">
+        <mat-label>Nazwisko</mat-label>
+        <input matInput formControlName="lastname" required>
+      </mat-form-field>
+    </div>
+    <mat-form-field class="full-width">
+      <mat-label>Numer telefonu (opcjonalnie)</mat-label>
+      <input matInput formControlName="phoneNumber">
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" required>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Wiadomość</mat-label>
+      <textarea matInput formControlName="message" required></textarea>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Preferowane godziny treningów</mat-label>
+      <input matInput formControlName="prefferedTrainingHours" required>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Wyślij</button>
+  </form>
+</div>
+
