@@ -20,5 +20,10 @@ import {animate, style, transition, trigger} from "@angular/animations";
   ]
 })
 export class HeroComponent {
-
+  navigateToContact(): void {
+    const selectionElement: HTMLElement = document.getElementById("contact")!;
+    if (selectionElement) {
+      selectionElement.scrollIntoView({behavior: "smooth"});
+    }
+  }
 }
