@@ -37,8 +37,7 @@ export class PartnersComponent {
     { src: './assets/images/partners/ntfy.png', alt: 'Nice To Fit You' },
     { src: './assets/images/partners/hsc.png', alt: 'Holistic Sport Center' },
     { src: './assets/images/partners/Fizjoterapia_Lukasz_Szefner.png', alt: 'Fizjoterapia Łukasz Szefner' },
-    { src: './assets/images/partners/ntfy.png', alt: 'Nice To Fit You' },
-    { src: './assets/images/partners/hsc.png', alt: 'Holistic Sport Center' },
-    { src: './assets/images/partners/Fizjoterapia_Lukasz_Szefner.png', alt: 'Fizjoterapia Łukasz Szefner' },
+    { src: './assets/images/partners/aarkada.jpg', alt: 'Aarkada' },
+
   ];
 }
