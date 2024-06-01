@@ -1,17 +1,16 @@
 <div id="education" class="education-section">
   <h2>Wiedza/Wykształcenie</h2>
-  @for(item of items; track item) {
+  @for(item of visibleItems; track trackByFn) {
     <div class="panel">
       <div class="panel-title" (click)="toggle(item)">
         <mat-icon class="chevron" [class.rotated]="item.state === 'expanded'">expand_more</mat-icon>
         {{ item.name }}
       </div>
       <div [@expandCollapse]="item.state" class="panel-content">
-        @if(item.imageUrl) {
-          <img src="{{item.imageUrl}}" [alt]="item.name" width="300" height="200">
-        }
+        <img *ngIf="item.imageUrl" src="{{item.imageUrl}}" [alt]="item.name">
         <p>{{ item.description }}</p>
       </div>
     </div>
   }
+  <button mat-raised-button color="primary" *ngIf="showMoreButtonVisible" (click)="showMore()">Pokaż więcej</button>
 </div>

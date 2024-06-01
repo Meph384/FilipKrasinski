@@ -1,17 +1,20 @@
 import { Component } from '@angular/core';
-import {animate, state, style, transition, trigger} from "@angular/animations";
-import {MatIcon} from "@angular/material/icon";
-import {NgOptimizedImage} from "@angular/common";
+import { animate, state, style, transition, trigger } from '@angular/animations';
+import { MatIcon } from '@angular/material/icon';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
+import {MatButton} from "@angular/material/button";
 
 @Component({
   selector: 'app-education',
   standalone: true,
   imports: [
+    CommonModule,
     MatIcon,
-    NgOptimizedImage
+    NgOptimizedImage,
+    MatButton
   ],
   templateUrl: './education.component.html',
-  styleUrl: './education.component.scss',
+  styleUrls: ['./education.component.scss'],
   animations: [
     trigger('expandCollapse', [
       state('collapsed', style({
@@ -21,7 +24,7 @@ import {NgOptimizedImage} from "@angular/common";
         opacity: '0'
       })),
       state('expanded', style({
-        height: '*', // Allows the content to expand to its natural height
+        height: '*',
         opacity: '1'
       })),
       transition('expanded <=> collapsed', animate('300ms ease-out'))
@@ -122,7 +125,25 @@ export class EducationComponent {
     },
   ];
 
+  initialDisplayCount = 5;
+  itemsIncrement = 5;
+
+  visibleItems = this.items.slice(0, this.initialDisplayCount);
+
+  get showMoreButtonVisible(): boolean {
+    return this.visibleItems.length < this.items.length;
+  }
+
   toggle(item: any): void {
     item.state = item.state === 'expanded' ? 'collapsed' : 'expanded';
+  }
+
+  showMore(): void {
+    const newCount = this.visibleItems.length + this.itemsIncrement;
+    this.visibleItems = this.items.slice(0, newCount);
+  }
+
+  trackByFn(index: number): number {
+    return index;
   }
 }
