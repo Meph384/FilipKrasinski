@@ -1,7 +1,13 @@
 <ngx-slick-carousel [config]="slideConfig" class="carousel">
-  @for (slide of slides; track slide.src) {
+  @for (slide of slides; track trackByFn) {
     <div ngxSlickItem class="slide">
-      <img src="{{ slide.src }}" alt="{{ slide.alt }}" width="100%">
+      <img src="{{ slide.src }}" alt="{{ slide.alt }}" width="100%" (click)="openModal(slide)">
     </div>
   }
 </ngx-slick-carousel>
+
+<div class="modal" [ngClass]="{'show': isModalOpen}" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <img [src]="selectedSlide?.src" [alt]="selectedSlide?.alt">
+  </div>
+</div>
