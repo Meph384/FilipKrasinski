@@ -1,0 +1,16 @@
+<div id="references" class="testimonial-carousel">
+  <h2>Referencje</h2>
+  <ngx-slick-carousel class="carousel" [config]="slideConfig" #slide>
+    @for(testimonial of testimonials; track testimonial.name) {
+      <div ngxSlickItem class="slide">
+        <div class="testimonial">
+          <div class="avatar-container">
+            <img [src]="testimonial.avatar" alt="{{testimonial.name}}" class="avatar">
+            <h3 class="name">{{testimonial.name}}</h3>
+          </div>
+          <p class="description">{{testimonial.description}}</p>
+        </div>
+      </div>
+    }
+  </ngx-slick-carousel>
+</div>

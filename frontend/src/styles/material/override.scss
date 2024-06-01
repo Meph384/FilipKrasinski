@@ -3,6 +3,12 @@
     padding: 0;
   }
   .mat-drawer-inner-container {
-    min-width: 200px;
+    min-width: 300px;
+  }
+  span.mat-mdc-list-item-unscoped-content.mdc-list-item__primary-text {
+    font-size: 24px;
+  }
+  a.mat-mdc-list-item.mdc-list-item.mat-mdc-list-item-interactive.mat-mdc-list-item-single-line.mdc-list-item--with-one-line {
+    margin-top: 10px;
   }
 }

@@ -21,13 +21,17 @@
   padding: 0 50px;
 
   @media (max-width: 1400px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     margin: 20px;
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
   }
 }
 
 .card {
-  height: 350px;
+  height: 450px;
   color: white;
   text-align: center;
   overflow: hidden;
@@ -35,6 +39,14 @@
   background-size: cover;
   background-position: center;
   position: relative;
+
+  @media (max-width: 1400px) {
+    background-position: top;
+  }
+
+  @media (max-width: 700px) {
+    background-position: center;
+  }
 
   &:hover .content {
     opacity: 0;

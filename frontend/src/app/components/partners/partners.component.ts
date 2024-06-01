@@ -12,10 +12,10 @@ import {CarouselComponent} from "../shared/carousel/carousel.component";
 })
 export class PartnersComponent {
   slideConfig = {
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000, // Adjust timing as necessary
+    autoplay: false,
+    autoplaySpeed: 2000,
     infinite: true,
     responsive: [
       {
@@ -31,12 +31,14 @@ export class PartnersComponent {
         }
       }
     ]
-
   };
 
   logos = [
-    { src: './assets/images/partners/ntfy.jpg', alt: 'Nice To Fit You' },
+    { src: './assets/images/partners/ntfy.png', alt: 'Nice To Fit You' },
     { src: './assets/images/partners/hsc.png', alt: 'Holistic Sport Center' },
-    { src: './assets/images/partners/Fizjoterapia Łukasz Szefner.jpg', alt: 'Fizjoterapia Łukasz Szefner' }
+    { src: './assets/images/partners/Fizjoterapia_Lukasz_Szefner.png', alt: 'Fizjoterapia Łukasz Szefner' },
+    { src: './assets/images/partners/ntfy.png', alt: 'Nice To Fit You' },
+    { src: './assets/images/partners/hsc.png', alt: 'Holistic Sport Center' },
+    { src: './assets/images/partners/Fizjoterapia_Lukasz_Szefner.png', alt: 'Fizjoterapia Łukasz Szefner' },
   ];
 }

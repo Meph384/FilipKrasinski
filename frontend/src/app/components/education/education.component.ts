@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import {animate, state, style, transition, trigger} from "@angular/animations";
 import {MatIcon} from "@angular/material/icon";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-education',
   standalone: true,
   imports: [
-    MatIcon
+    MatIcon,
+    NgOptimizedImage
   ],
   templateUrl: './education.component.html',
   styleUrl: './education.component.scss',

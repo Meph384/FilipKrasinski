@@ -14,11 +14,12 @@ import {TrainingCenterComponent} from "./components/training-center/training-cen
 import {SocialMediaSidebarComponent} from "./components/social-media-sidebar/social-media-sidebar.component";
 import {FooterComponent} from "./components/footer/footer.component";
 import {TrainingCenterLocationComponent} from "./components/training-center-location/training-center-location.component";
+import {ReferencesComponent} from "./components/references/references.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeroComponent, MatIcon, MatIconButton, MatSidenav, MatSidenavContainer, MatSidenavContent, MatListItem, MatNavList, AboutComponent, PricingCardComponent, EducationComponent, MetamorphGalleryComponent, PartnersComponent, TrainingCenterComponent, TrainingCenterLocationComponent, SocialMediaSidebarComponent, FooterComponent],
+  imports: [RouterOutlet, HeroComponent, MatIcon, MatIconButton, MatSidenav, MatSidenavContainer, MatSidenavContent, MatListItem, MatNavList, AboutComponent, PricingCardComponent, EducationComponent, MetamorphGalleryComponent, PartnersComponent, TrainingCenterComponent, TrainingCenterLocationComponent, SocialMediaSidebarComponent, FooterComponent, ReferencesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

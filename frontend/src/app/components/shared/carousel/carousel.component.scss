@@ -3,7 +3,6 @@
   width: 100%;
   margin: 20px auto;
   max-width: 70dvw;
-  max-height: 600px;
 
   .slide {
     display: flex;
@@ -11,12 +10,12 @@
     align-items: center;
     cursor: pointer;
     margin: 0 5px;
+    height: 300px;
 
     img {
-      max-width: 100%;  // Ensures the image is not wider than the slide
-      max-height: 100%; // Ensures the image is not taller than the slide
-      object-fit: contain;  // Maintains the aspect ratio while fitting to the container
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
     }
   }
 }
-//

@@ -1,0 +1,75 @@
+@use "palette";
+
+.testimonial-carousel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 400px;
+  padding: 20px 0;
+  margin: auto;
+  background: palette.$tertiary-900;
+  justify-content: center;
+  align-items: center;
+
+  .carousel {
+    width: 80%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    max-width: 500px;
+
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    min-height: 300px;
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+
+  .avatar-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .name {
+    font-size: 1.2em;
+    line-height: 26px;
+    font-weight: bold;
+    color: palette.$primary;
+  }
+
+  .description {
+    margin-top: 10px;
+    font-size: 1em;
+    color: palette.$tertiary-600;
+  }
+}

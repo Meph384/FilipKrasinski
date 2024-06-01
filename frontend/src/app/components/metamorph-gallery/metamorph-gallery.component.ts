@@ -12,17 +12,24 @@ export class MetamorphGalleryComponent {
   transformations: Transformation[] = [
     {
       beforeImage1: './assets/images/Metamorph/Mateusz_Zygmunt_Before_Front.jpg',
-      afterImage1: './assets/images/Metamorph/Mateusz_Zygmunt_After_Front.jpg',
-      beforeImage2: './assets/images/Metamorph/Mateusz_Zygmunt_Before_Side.jpg',
+      afterImage1: './assets/images/Metamorph/Mateusz_Zygmunt_Before_Side.jpg',
+      beforeImage2: './assets/images/Metamorph/Mateusz_Zygmunt_After_Front.jpg',
       afterImage2: './assets/images/Metamorph/Mateusz_Zygmunt_After_Side.jpg',
       description: 'Description of transformation 1'
     },
     {
       beforeImage1: './assets/images/Metamorph/Mariusz_Gilewicz_Before_Front.jpg',
-      afterImage1: './assets/images/Metamorph/Mariusz_Gilewicz_After_Front.jpg',
-      beforeImage2: './assets/images/Metamorph/Mariusz_Gilewicz_Before_Side.jpg',
+      afterImage1: './assets/images/Metamorph/Mariusz_Gilewicz_Before_Side.jpg',
+      beforeImage2: './assets/images/Metamorph/Mariusz_Gilewicz_After_Front.jpg',
       afterImage2: './assets/images/Metamorph/Mariusz_Gilewicz_After_Side.jpg',
       description: 'Description of transformation 2'
     },
+    {
+      beforeImage1: './assets/images/Metamorph/Karolina_Before_Front.jpg',
+      afterImage1: './assets/images/Metamorph/Karolina_Before_Front.jpg',
+      beforeImage2: './assets/images/Metamorph/Karolina_After_Front.jpg',
+      afterImage2: './assets/images/Metamorph/Karolina_After_Front.jpg',
+      description: 'Description of transformation 2'
+    }
   ];
 }
