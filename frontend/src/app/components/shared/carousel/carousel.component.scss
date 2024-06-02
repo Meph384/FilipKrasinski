@@ -4,6 +4,10 @@
   margin: 20px auto;
   max-width: 70dvw;
 
+  @media only screen and (max-width: 768px) {
+    max-width: 95dvw;
+  }
+
   .slide {
     display: flex;
     justify-content: center;

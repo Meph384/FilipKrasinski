@@ -3,11 +3,20 @@
   flex-direction: column;
   max-width: 1000px;
   margin: 60px auto 20px;
+
+  @media only screen and (max-width: 768px) {
+    padding: 0 30px;
+  }
+
 }
 
 .full-width {
   width: 100%;
   margin-bottom: 16px;
+}
+
+.last-element{
+  padding-bottom: 20px;
 }
 
 .half-width {
@@ -19,6 +28,16 @@
   margin-right: 0;
 }
 
-h2{
+h2 {
   margin-bottom: 20px;
+}
+
+button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+form{
+  position: relative;
 }
