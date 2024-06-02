@@ -16,9 +16,7 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <button mat-icon-button (click)="sidenav.toggle()">
-      <mat-icon>menu</mat-icon>
-    </button>
+    <app-header (sideNavToggle)="sidenav.toggle()"></app-header>
     <app-social-media-sidebar></app-social-media-sidebar>
     <app-hero></app-hero>
     <app-about></app-about>
