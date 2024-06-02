@@ -6,3 +6,12 @@
   gap: 20px;
   padding: 40px;
 }
+
+.map{
+  max-width: 70%;
+  height: 450px;
+
+  @media (max-width: 700px) {
+    max-width: 100%;
+  }
+}
