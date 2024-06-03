@@ -24,18 +24,19 @@ export class PricingCardComponent {
       price: 'Umów się na bezpłatną konsultację'
     },
     {
-      backgroundImage: 'url("./assets/images/offer/Indywidualny plan treningowy.jpg")',
-      title: 'Indywidualny Plan Treningowy',
-      shortDescription: 'Spersonalizowny plan treningowy',
-      longDescription: 'Przygotuję dla Ciebie plan dostosowany do Twoich potrzeb z uwzględnieniem Twojego stylu życia, nawyków żywieniowych i czasu który jesteś w stanie poświęcić na zmianę!',
-      price: '200zł'
-    },
-    {
       backgroundImage: 'url("https://media.istockphoto.com/id/1365886686/photo/shot-of-a-woman-working-out-with-a-kettle-bell.jpg?s=612x612&w=0&k=20&c=dP49_35EQgBeERghq_xnYEAvDLBXn2Vt0Xhx9rdWLl0=")',
       title: 'Współpraca online #TeamKrasiński',
       shortDescription: 'opis krótki',
       longDescription: 'opis długi',
       price: '300zł/msc'
     },
+    {
+      backgroundImage: 'url("./assets/images/offer/Indywidualny plan treningowy.jpg")',
+      title: 'Indywidualny Plan Treningowy',
+      shortDescription: 'Spersonalizowny plan treningowy',
+      longDescription: 'Przygotuję dla Ciebie plan dostosowany do Twoich potrzeb z uwzględnieniem Twojego stylu życia, nawyków żywieniowych i czasu który jesteś w stanie poświęcić na zmianę!',
+      price: '200zł'
+    },
+
   ];
 }

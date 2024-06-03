@@ -53,11 +53,6 @@ export class ReferencesComponent {
       description: 'Trening z Filipem to nie tylko efektywne ćwiczenia fizyczne, ale także wsparcie merytoryczne i emocjonalne, które pomaga Mi osiągnąć najlepsze rezultaty. Polecam'
     },
     {
-      avatar: './assets/images/references/Jan Hyla.jpg',
-      name: 'Jan Hyla',
-      description: 'ZA DŁUGIE!'
-    },
-    {
       avatar: './assets/images/references/Justyna Łabaj.jpg',
       name: 'Justyna',
       description: 'Od roku, stale, kilka godzin tygodniowo trenuje Pole Dance.\n' +
@@ -128,25 +123,24 @@ export class ReferencesComponent {
     {
       avatar: './assets/images/references/Vadym Solodovnik.jpg',
       name: 'Vadym',
-      description: 'Рекомендую Филипа в качестве личного тренера. Кроме улучшения физической формы Филип также помогает мне с реабилитацией после реконструкции порванных связок колена. Дружественная атмосфера и ответственный подход к тренировкам.'
+      description: 'Polecam Filipa jako trenera personalnego. Oprócz poprawy sprawności fizycznej Filip pomaga mi również w rehabilitacji po rekonstrukcji zerwanych więzadeł kolana. Przyjazna atmosfera i odpowiedzialne podejście do szkoleń.'
     },
-
   ];
 
   slideConfig = {
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
     infinite: true,
     arrows: true,
-    speed: 300,
+    speed: 500,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         }
       },
       {
