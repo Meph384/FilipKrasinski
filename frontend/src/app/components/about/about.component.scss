@@ -18,20 +18,21 @@
   @media (max-width: breakpoints.$medium-screen) {
     flex-direction: column-reverse;
     width: 100%;
+    gap: 32px;
   }
 
   img {
-    height: 50dvh;
+    height: 50lvh;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
 
     @media only screen and (max-width: 1440px) {
-      height: 70dvh;
+      height: 70lvh;
     }
 
     @media only screen and (max-width: 425px) {
-      height: 60dvh;
+      height: 60lvh;
     }
   }
 

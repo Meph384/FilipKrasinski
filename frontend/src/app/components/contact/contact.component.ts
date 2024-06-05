@@ -1,10 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-import {ContactService} from "../../Services/ContactService";
-import {NgIf} from "@angular/common";
+import { ContactService } from "../../Services/ContactService";
 
 @Component({
   selector: 'app-contact',
@@ -13,13 +12,12 @@ import {NgIf} from "@angular/common";
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    ReactiveFormsModule,
-    NgIf,
+    ReactiveFormsModule
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
   contactForm!: FormGroup;
   formSubmitted: boolean = false;
 
