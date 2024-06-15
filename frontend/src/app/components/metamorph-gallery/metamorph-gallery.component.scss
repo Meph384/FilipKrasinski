@@ -13,17 +13,21 @@ h2 {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 20px;
   width: 100%;
   padding: 0 50px;
   justify-content: center;
+
+  @media (max-width: 350px) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
 }
 
 .transformation {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4fr 1fr;
+  grid-template-rows: 10fr 1fr;
   gap: 10px;
   grid-row-gap: 5px; /* Adds space between images and description */
 }
@@ -31,7 +35,7 @@ h2 {
 .image-container {
   position: relative;
   width: 100%;
-  padding-top: 75%;
+  padding-top: 100%;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -57,6 +61,12 @@ h2 {
 }
 
 .transformation:hover .image-container img.after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Disable hover effect when after image is null */
+.transformation.no-hover:hover .image-container img.before {
   opacity: 1;
   transform: scale(1);
 }
