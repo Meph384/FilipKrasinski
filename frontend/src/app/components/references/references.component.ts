@@ -128,9 +128,9 @@ export class ReferencesComponent {
   ];
 
   slideConfig = {
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    dots: false,
+    dots: true,
     infinite: true,
     arrows: true,
     speed: 500,

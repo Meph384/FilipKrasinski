@@ -17,6 +17,7 @@ export class TrainingCenterComponent {
     autoplay: true,
     autoplaySpeed: 2000,
     infinite: true,
+    dots: true,
     responsive: [
       {
         breakpoint: 1280,

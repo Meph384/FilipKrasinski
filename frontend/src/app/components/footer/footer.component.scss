@@ -10,7 +10,7 @@
 
 .footer-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: wrap;
   font-size: 14px;
@@ -62,4 +62,9 @@
 .location-info a {
   color: palette.$primary-400;
   text-decoration: none;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
 }
