@@ -38,8 +38,8 @@ export class PartnersComponent {
   logos = [
     { src: './assets/images/partners/ntfy.png', alt: 'Nice To Fit You' },
     { src: './assets/images/partners/hsc.png', alt: 'Holistic Sport Center' },
-    { src: './assets/images/partners/Łukasz Szefner całe logoo.png', alt: 'Fizjoterapia Łukasz Szefner' },
-    { src: './assets/images/partners/LOGO AARKADA.png', alt: 'Aarkada' },
+    { src: './assets/images/partners/lukass.png', alt: 'Fizjoterapia Łukasz Szefner' },
+    { src: './assets/images/partners/LOGOAARKADA.png', alt: 'Aarkada' },
 
   ];
 }

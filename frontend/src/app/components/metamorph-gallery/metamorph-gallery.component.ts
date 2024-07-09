@@ -11,38 +11,38 @@ import {Transformation} from "../../interfaces/transformation.interface";
 export class MetamorphGalleryComponent {
   transformations: Transformation[] = [
     {
-      beforeImage1: './assets/images/Metamorph/Mateusz BPrzed_ Przód.jpg',
-      afterImage1: './assets/images/Metamorph/Mateusz BPo_ Przód.jpg',
-      beforeImage2: './assets/images/Metamorph/Mateusz BPrzed_Bok.jpg',
-      afterImage2: './assets/images/Metamorph/Mateusz BPo_ Bok.jpg',
+      beforeImage1: './assets/images/Metamorph/MateuszBPrzed_Przod.jpg',
+      afterImage1: './assets/images/Metamorph/MateuszBPo_Przod.jpg',
+      beforeImage2: './assets/images/Metamorph/MateuszBPrzed_Bok.jpg',
+      afterImage2: './assets/images/Metamorph/MateuszBPo_Bok.jpg',
       description: ''
     },
     {
-      beforeImage1: './assets/images/Metamorph/Mateusz ZPrzed_ Przód.jpg',
-      afterImage1: './assets/images/Metamorph/Mateusz ZPo_ Przód.JPG',
-      beforeImage2: './assets/images/Metamorph/Mateusz ZPrzed_ Bok .jpg',
-      afterImage2: './assets/images/Metamorph/Mateusz ZPo_ Bok.JPG',
+      beforeImage1: './assets/images/Metamorph/MateuszZPrzed_Przod.jpg',
+      afterImage1: './assets/images/Metamorph/MateuszZPo_Przod.JPG',
+      beforeImage2: './assets/images/Metamorph/MateuszZPrzed_Bok.jpg',
+      afterImage2: './assets/images/Metamorph/MateuszZPo_Bok.JPG',
       description: ''
     },
     {
-      beforeImage1: './assets/images/Metamorph/Michał FPrzed_ Przód.JPG',
-      afterImage1: './assets/images/Metamorph/Michał FPo_ Przód.JPG',
-      beforeImage2: './assets/images/Metamorph/Michał FPrzed_ Bok.JPG',
-      afterImage2: './assets/images/Metamorph/Michał FPo_ Bok.JPG',
+      beforeImage1: './assets/images/Metamorph/MichalFPrzed_Przod.JPG',
+      afterImage1: './assets/images/Metamorph/MichalFPo_Przod.JPG',
+      beforeImage2: './assets/images/Metamorph/MichalFPrzed_Bok.JPG',
+      afterImage2: './assets/images/Metamorph/MichalFPo_Bok.JPG',
       description: ''
     },
     {
-      beforeImage1: './assets/images/Metamorph/Bartek Przed_ Przód.jpg',
-      afterImage1: './assets/images/Metamorph/Bartek Po_ Przód.jpg',
-      beforeImage2: './assets/images/Metamorph/Bartek Przed_ TYŁ.jpg',
-      afterImage2: './assets/images/Metamorph/Bartek Po_ TYŁ.jpg',
+      beforeImage1: './assets/images/Metamorph/BartekPrzed_Przod.jpg',
+      afterImage1: './assets/images/Metamorph/BartekPo_Przod.jpg',
+      beforeImage2: './assets/images/Metamorph/BartekPrzed_TYl.jpg',
+      afterImage2: './assets/images/Metamorph/BartekPo_TYl.jpg',
       description: ''
     },
     {
-      beforeImage1: './assets/images/Metamorph/BartekL Przed_ przód.JPG',
-      afterImage1: './assets/images/Metamorph/BartekL Po_ Przód.jpg',
-      beforeImage2: './assets/images/Metamorph/BartekL Przed_ bok.JPG',
-      afterImage2: './assets/images/Metamorph/BartekL Po_ bok.jpg',
+      beforeImage1: './assets/images/Metamorph/BartekLPrzed_przod.JPG',
+      afterImage1: './assets/images/Metamorph/BartekLPo_Przod.jpg',
+      beforeImage2: './assets/images/Metamorph/BartekLPrzed_bok.JPG',
+      afterImage2: './assets/images/Metamorph/BartekLPo_bok.jpg',
       description: ''
     },
     {
@@ -56,10 +56,10 @@ export class MetamorphGalleryComponent {
       description: ''
     },
     {
-      beforeImage1: './assets/images/Metamorph/Mariusz GPrzed_Przód.jpg',
-      afterImage1: './assets/images/Metamorph/Mariusz GPo_ Przód.jpg',
-      beforeImage2: './assets/images/Metamorph/Mariusz GPrzed_Bok.jpg',
-      afterImage2: './assets/images/Metamorph/Mariusz GPo_ Bok.jpg',
+      beforeImage1: './assets/images/Metamorph/MariuszGPrzed_Przod.jpg',
+      afterImage1: './assets/images/Metamorph/MariuszGPo_Przod.jpg',
+      beforeImage2: './assets/images/Metamorph/MariuszGPrzed_Bok.jpg',
+      afterImage2: './assets/images/Metamorph/MariuszGPo_Bok.jpg',
       description: ''
     },
     {
@@ -68,29 +68,29 @@ export class MetamorphGalleryComponent {
       description: ''
     },
     {
-      beforeImage1: './assets/images/Metamorph/Błażej Przed_ Przód.JPG',
-      afterImage1: './assets/images/Metamorph/Błażej Po_ Przód.jpg',
+      beforeImage1: './assets/images/Metamorph/BlazejPrzed_Przod.JPG',
+      afterImage1: './assets/images/Metamorph/BlazejPo_Przod.jpg',
       description: ''
     },
     {
-      beforeImage1: './assets/images/Metamorph/Karolina Przed_ Przód.JPG',
-      afterImage1: './assets/images/Metamorph/Karolina Po_ Przód.JPG',
+      beforeImage1: './assets/images/Metamorph/KarolinaPrzed_Przod.JPG',
+      afterImage1: './assets/images/Metamorph/KarolinaPo_Przod.JPG',
       description: ''
     },
     {
-      beforeImage1: './assets/images/Metamorph/Konrad B Przed_Przód .JPG',
-      afterImage1: './assets/images/Metamorph/Konrad B Po_Przód.JPG',
+      beforeImage1: './assets/images/Metamorph/KonradBPrzed_Przod.JPG',
+      afterImage1: './assets/images/Metamorph/KonradBPo_Przod.JPG',
       description: ''
     },
     {
-      beforeImage1: './assets/images/Metamorph/Marcel M Przed_ Przód.jpg',
-      afterImage1: './assets/images/Metamorph/Marcel M Po_ Przód.jpg',
+      beforeImage1: './assets/images/Metamorph/MarcelMPrzed_Przod.jpg',
+      afterImage1: './assets/images/Metamorph/MarcelMPo_Przod.jpg',
       description: ''
     },
 
     {
-      beforeImage1: './assets/images/Metamorph/Mikołaj KPrzed_ Przód.JPG',
-      afterImage1: './assets/images/Metamorph/Mikołaj KPo_ Przód.JPG',
+      beforeImage1: './assets/images/Metamorph/MikolajKPrzed_Przod.JPG',
+      afterImage1: './assets/images/Metamorph/MikolajKPo_Przod.JPG',
       description: ''
     }
 
