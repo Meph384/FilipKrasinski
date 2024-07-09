@@ -8,6 +8,6 @@
 
 <div class="modal" [ngClass]="{'show': isModalOpen}" (click)="closeModal()">
   <div class="modal-content" (click)="$event.stopPropagation()">
-    <img [src]="selectedSlide?.src" [alt]="selectedSlide?.alt">
+    <img class="modal-image" [src]="selectedSlide?.src" [alt]="selectedSlide?.alt">
   </div>
 </div>
