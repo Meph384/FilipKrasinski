@@ -4,17 +4,10 @@
     <div>
       <h2>O mnie</h2>
       <div>
-        <p>
-          Nazywam się Filip Krasiński, jestem wieloletnim sportowcem, trenerem personalnym i absolwentem Szkoły Mistrzostwa Sportowego “SMS Junior Wrocław”.
-          Moja pasja do sportu i różnorodne doświadczenia – od judo i zapasów, po piłkę nożną, tenis, pięciobój nowoczesny i wieloletnią karierę siatkarską – skłoniły mnie do założenia centrum treningowego “Holistic Sport Center” w Wrocławiu.
-          Posiadam liczne certyfikaty z zakresu dietetyki, suplementacji oraz programowania treningowego.
-        </p>
-        <p>
-          Jako trener personalny kładę nacisk na indywidualne podejście, bezpieczeństwo oraz zdrowie moich podopiecznych.
-          Oferuję wsparcie w redukcji wagi, modelowaniu sylwetki, budowaniu masy mięśniowej, poprawie kondycji i ogólnym samopoczuciu.
-          Dbam o motywującą atmosferę, prawidłową technikę ćwiczeń i monitorowanie postępów, aby zapewnić optymalne rezultaty i minimalizować ryzyko kontuzji.
-          Moim celem jest nie tylko transformacja fizyczna, ale również wsparcie w budowaniu zdrowych nawyków i pozytywnego podejścia do aktywności fizycznej.
-        </p>
+        <div *ngFor="let paragraph of paragraphs; let i = index">
+          <p *ngIf="i < 3 || showMore">{{ paragraph }}</p>
+        </div>
+        <button mat-raised-button color="primary" (click)="toggleReadMore()">{{ showMore ? 'Czytaj mniej' : 'Czytaj więcej' }}</button>
       </div>
     </div>
   </div>

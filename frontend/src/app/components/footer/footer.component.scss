@@ -14,11 +14,24 @@
   align-items: flex-start;
   flex-wrap: wrap;
   font-size: 14px;
-  color: palette.$primary-50
+  color: palette.$primary-50;
+
+  @media only screen and (max-width: 650px) {
+    justify-content: flex-start;
+  }
+
 }
 
 .footer-content div {
   margin: 10px;
+}
+
+.hours-info{
+  text-align: start;
+}
+
+.contact-info {
+  text-align: start;
 }
 
 .contact-info a,
@@ -30,6 +43,16 @@
 .contact-info a:hover,
 .authors a:hover {
   color: palette.$primary-50;
+}
+
+.contact-item{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  a {
+    margin-left: 10px;
+  }
 }
 
 .authors {
@@ -53,8 +76,13 @@
   }
 }
 
+.location-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .authors p,
-.contact-info p,
 .location-info p {
   margin: 5px 0;
 }
@@ -65,6 +93,10 @@
 }
 
 .logo{
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
+}
+
+.location{
+  margin-top: 20px;
 }

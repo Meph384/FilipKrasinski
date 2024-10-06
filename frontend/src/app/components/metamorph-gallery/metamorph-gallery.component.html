@@ -1,7 +1,7 @@
 <div id="metamorphosis" class="gallery-container">
   <h2>Metamorfozy</h2>
   <div class="gallery">
-    @for(transformation of transformations; track transformations) {
+    @for(transformation of visibleItems; track trackByFn) {
       <div class="transformation" [class.no-hover]="!transformation.afterImage2 || !transformation.beforeImage2">
         <div class="image-container">
           <img class="before" [src]="transformation.beforeImage1" alt="Before">
@@ -21,4 +21,5 @@
       </div>
     }
   </div>
+  <button mat-raised-button color="primary" *ngIf="showMoreButtonVisible" (click)="showMore()">Pokaż więcej</button>
 </div>

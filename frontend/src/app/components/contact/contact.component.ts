@@ -30,7 +30,7 @@ export class ContactComponent implements OnInit {
       phoneNumber: [''],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
-      preferredTrainingHours: ['', Validators.required]
+      prefferedTrainingHours: ['', Validators.required]
     });
   }
 

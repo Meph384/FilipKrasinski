@@ -1,6 +1,6 @@
 <div id="contact" class="form-container">
   @if(!formSubmitted) {
-    <h2>Zacznij zmianę! Skontaktuj się ze mną:</h2>
+    <h2>Formularz kontaktowy:</h2>
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <div class="full-width">
         <mat-form-field class="half-width">
@@ -26,7 +26,7 @@
       </mat-form-field>
       <mat-form-field class="full-width last-element">
         <mat-label>Preferowane godziny treningów</mat-label>
-        <input matInput formControlName="preferredTrainingHours" required>
+        <input matInput formControlName="prefferedTrainingHours" required>
       </mat-form-field>
       <button mat-raised-button color="primary" type="submit">Wyślij</button>
     </form>

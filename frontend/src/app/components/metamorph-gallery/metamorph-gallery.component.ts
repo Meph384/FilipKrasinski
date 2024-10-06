@@ -1,22 +1,20 @@
 import { Component } from '@angular/core';
 import {Transformation} from "../../interfaces/transformation.interface";
+import {MatButton} from "@angular/material/button";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-metamorph-gallery',
   standalone: true,
-  imports: [],
+  imports: [
+    MatButton,
+    NgIf
+  ],
   templateUrl: './metamorph-gallery.component.html',
   styleUrl: './metamorph-gallery.component.scss'
 })
 export class MetamorphGalleryComponent {
   transformations: Transformation[] = [
-    {
-      beforeImage1: './assets/images/Metamorph/MateuszBPrzed_Przod.jpg',
-      afterImage1: './assets/images/Metamorph/MateuszBPo_Przod.jpg',
-      beforeImage2: './assets/images/Metamorph/MateuszBPrzed_Bok.jpg',
-      afterImage2: './assets/images/Metamorph/MateuszBPo_Bok.jpg',
-      description: ''
-    },
     {
       beforeImage1: './assets/images/Metamorph/MateuszZPrzed_Przod.jpg',
       afterImage1: './assets/images/Metamorph/MateuszZPo_Przod.JPG',
@@ -29,6 +27,30 @@ export class MetamorphGalleryComponent {
       afterImage1: './assets/images/Metamorph/MichalFPo_Przod.JPG',
       beforeImage2: './assets/images/Metamorph/MichalFPrzed_Bok.JPG',
       afterImage2: './assets/images/Metamorph/MichalFPo_Bok.JPG',
+      description: ''
+    },
+    {
+      beforeImage1: './assets/images/Metamorph/MariuszGPrzed_Przod.jpg',
+      afterImage1: './assets/images/Metamorph/MariuszGPo_Przod.jpg',
+      beforeImage2: './assets/images/Metamorph/MariuszGPrzed_Bok.jpg',
+      afterImage2: './assets/images/Metamorph/MariuszGPo_Bok.jpg',
+      description: ''
+    },
+    {
+      beforeImage1: './assets/images/Metamorph/BlazejPrzed_Przod.JPG',
+      afterImage1: './assets/images/Metamorph/BlazejPo_Przod.jpg',
+      description: ''
+    },
+    {
+      beforeImage1: './assets/images/Metamorph/MateuszBPrzed_Przod.jpg',
+      afterImage1: './assets/images/Metamorph/MateuszBPo_Przod.jpg',
+      beforeImage2: './assets/images/Metamorph/MateuszBPrzed_Bok.jpg',
+      afterImage2: './assets/images/Metamorph/MateuszBPo_Bok.jpg',
+      description: ''
+    },
+    {
+      beforeImage1: './assets/images/Metamorph/MikolajKPrzed_Przod.JPG',
+      afterImage1: './assets/images/Metamorph/MikolajKPo_Przod.JPG',
       description: ''
     },
     {
@@ -56,20 +78,8 @@ export class MetamorphGalleryComponent {
       description: ''
     },
     {
-      beforeImage1: './assets/images/Metamorph/MariuszGPrzed_Przod.jpg',
-      afterImage1: './assets/images/Metamorph/MariuszGPo_Przod.jpg',
-      beforeImage2: './assets/images/Metamorph/MariuszGPrzed_Bok.jpg',
-      afterImage2: './assets/images/Metamorph/MariuszGPo_Bok.jpg',
-      description: ''
-    },
-    {
       beforeImage1: './assets/images/Metamorph/Artur_przed.jpg',
       afterImage1: './assets/images/Metamorph/Artur_po.jpg',
-      description: ''
-    },
-    {
-      beforeImage1: './assets/images/Metamorph/BlazejPrzed_Przod.JPG',
-      afterImage1: './assets/images/Metamorph/BlazejPo_Przod.jpg',
       description: ''
     },
     {
@@ -87,12 +97,29 @@ export class MetamorphGalleryComponent {
       afterImage1: './assets/images/Metamorph/MarcelMPo_Przod.jpg',
       description: ''
     },
-
     {
-      beforeImage1: './assets/images/Metamorph/MikolajKPrzed_Przod.JPG',
-      afterImage1: './assets/images/Metamorph/MikolajKPo_Przod.JPG',
+      beforeImage1: './assets/images/Metamorph/JakubGPrzed_Przod.jpg',
+      afterImage1: './assets/images/Metamorph/JakubGPo_Przod.jpg',
+      beforeImage2: './assets/images/Metamorph/JakubGPrzed_Bok.jpg',
+      afterImage2: './assets/images/Metamorph/JakubGPo_Bok.jpg',
       description: ''
-    }
-
+    },
   ];
+
+  initialDisplayCount = 6;
+  itemsIncrement = 6;
+
+  visibleItems = this.transformations.slice(0, this.initialDisplayCount);
+  get showMoreButtonVisible(): boolean {
+    return this.visibleItems.length < this.transformations.length;
+  }
+
+  showMore(): void {
+    const newCount = this.visibleItems.length + this.itemsIncrement;
+    this.visibleItems = this.transformations.slice(0, newCount);
+  }
+
+  trackByFn(index: number): number {
+    return index;
+  }
 }
