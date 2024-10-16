@@ -104,6 +104,13 @@ export class MetamorphGalleryComponent {
       afterImage2: './assets/images/Metamorph/JakubGPo_Bok.jpg',
       description: ''
     },
+    {
+      beforeImage1: './assets/images/Metamorph/Jakub_Go_Przod__Przed.jpg',
+      afterImage1: './assets/images/Metamorph/JakubGo_przod_po.jpg',
+      beforeImage2: './assets/images/Metamorph/Jakub_Go_Bok_przed.jpg',
+      afterImage2: './assets/images/Metamorph/JakubGo_bok_po.jpg',
+      description: ''
+    }
   ];
 
   initialDisplayCount = 6;
