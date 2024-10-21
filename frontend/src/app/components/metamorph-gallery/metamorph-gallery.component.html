@@ -5,18 +5,19 @@
       <div class="transformation" [class.no-hover]="!transformation.afterImage2 || !transformation.beforeImage2">
         <div class="image-container">
           <img class="before" [src]="transformation.beforeImage1" alt="Before">
+          <span class="image-label">Przed</span>
           @if(transformation.beforeImage2){
             <img class="after" [src]="transformation.beforeImage2" alt="Before">
+            <span class="image-label">Przed</span>
           }
         </div>
         <div class="image-container">
           <img class="before" [src]="transformation.afterImage1" alt="After">
+          <span class="image-label">Po</span>
           @if(transformation.afterImage2){
             <img class="after" [src]="transformation.afterImage2" alt="After">
+            <span class="image-label">Po</span>
           }
-        </div>
-        <div class="description">
-          <p>{{ transformation.description }}</p>
         </div>
       </div>
     }

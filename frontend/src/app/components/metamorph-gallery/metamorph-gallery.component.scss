@@ -16,7 +16,7 @@ h2 {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 20px;
   width: 100%;
-  padding: 0 50px;
+  padding: 10px 50px;
   justify-content: center;
 
   @media (max-width: 350px) {
@@ -27,7 +27,6 @@ h2 {
 .transformation {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 10fr 1fr;
   gap: 10px;
   grid-row-gap: 5px; /* Adds space between images and description */
 }
@@ -65,17 +64,34 @@ h2 {
   transform: scale(1);
 }
 
-/* Disable hover effect when after image is null */
 .transformation.no-hover:hover .image-container img.before {
   opacity: 1;
   transform: scale(1);
 }
 
 .description {
-  grid-column: 1 / -1; /* Spans across both columns */
+  grid-column: 1 / -1;
   text-align: center;
   font-style: italic;
   color: #333;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
 }
