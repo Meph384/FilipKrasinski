@@ -25,6 +25,7 @@ h2 {
 }
 
 .transformation {
+  min-height: 300px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
