@@ -17,7 +17,7 @@ export class PricingCardComponent {
       price: 'Umów się na konsultację'
     },
     {
-      backgroundImage: 'url("https://media.istockphoto.com/id/1365886686/photo/shot-of-a-woman-working-out-with-a-kettle-bell.jpg?s=612x612&w=0&k=20&c=dP49_35EQgBeERghq_xnYEAvDLBXn2Vt0Xhx9rdWLl0=")',
+      backgroundImage: 'url("./assets/images/offer/wspolpraca online.jpg")',
       title: 'Współpraca Online #TeamKrasiński',
       shortDescription: '',
       longDescription: 'W ramach opieki trenerskiej zapewnię Ci zindywidualizowany oraz spersonalizowany plan treningowy, szczegółowy rozkład kalorii i makroskładników oraz suplementację, dostosowaną do Twoich unikalnych potrzeb i celów treningowych. \n' +
@@ -32,7 +32,7 @@ export class PricingCardComponent {
       price: '200 zł'
     },
     {
-      backgroundImage: 'url("./assets/images/offer/Trening w parach.jpg")',
+      backgroundImage: 'url("./assets/images/offer/plan zywieniowy.jpg")',
       title: 'Plan Żywieniowy',
       shortDescription: '',
       longDescription: 'Jeśli pragniesz osiągnąć swoje cele zdrowotne poprzez właściwe odżywianie, skorzystaj z naszej oferty współpracy z doświadczonym dietetykiem, który zapewni Ci spersonalizowaną i profesjonalną pomoc.',
