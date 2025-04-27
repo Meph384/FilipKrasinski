@@ -22,7 +22,7 @@ export class PricingCardComponent {
       shortDescription: '',
       longDescription: 'W ramach opieki trenerskiej zapewnię Ci zindywidualizowany oraz spersonalizowany plan treningowy, szczegółowy rozkład kalorii i makroskładników oraz suplementację, dostosowaną do Twoich unikalnych potrzeb i celów treningowych. \n' +
         'Proces ten będzie oparty na regularnych raportach oraz stałym kontakcie, abyśmy mogli monitorować postępy.',
-      price: '300 zł'
+      price: '350 zł'
     },
     {
       backgroundImage: 'url("./assets/images/offer/Indywidualny plan treningowy.jpg")',
